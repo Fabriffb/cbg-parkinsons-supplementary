@@ -23,24 +23,20 @@
 <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#methods">Computational methods</a><a href="#software">Software</a><a href="#references">Selected references</a></nav>
 <section id="overview"><h2>Project overview</h2>
 <p class="lead">This study combines density functional theory (DFT) calculations and molecular docking to explore electronic reactivity and predicted interactions between selected tattoo-ink-related compounds and human serum albumin (HSA).</p>
-<p>BaP, its reactive metabolite (+)-anti-BPDE, and Pigment Red 170 were investigated using electronic descriptors, including frontier molecular orbitals, the HOMO–LUMO gap, chemical potential, hardness, electrophilicity, Fukui functions, and molecular electrostatic potential. Docking with AutoDock4, AutoDock Vina, and DOCK6 was used to examine predicted binding poses and non-covalent protein–ligand interactions.</p>
-<div class="note"><strong>Interpretation note:</strong> conventional docking predicts non-covalent binding poses and scores; it does not by itself demonstrate covalent adduct formation or immunogenicity. These results should be interpreted as computational evidence relevant to exploring haptenization potential.</div>
+<p>BaP, its reactive metabolite (+)-anti-BPDE, and Pigment Red 170 were investigated using electronic descriptors, including frontier molecular orbitals, the HOMO–LUMO gap, chemical potential, hardness, electrophilicity, Fukui functions, and molecular electrostatic potential. Docking with AutoDock Vina was used to examine predicted binding poses and non-covalent protein–ligand interactions.</p>
 </section>
 <section id="methods"><h2>Computational methods</h2>
 <div class="contact-grid">
-<div class="contact-card"><div class="label">Electronic structure</div><strong>DFT geometry optimization</strong><p> B3LYP-D3(BJ)/6-31+G(d,p); frequency calculations used to verify optimized structures as local minima.</p></div>
+<div class="contact-card"><div class="label">Electronic structure</div><strong>DFT geometry optimization</strong><p> B3LYP-D3(BJ)/6-31+G(d,p) calculations performed with ORCA 6.1.1; frequency calculations used to verify optimized structures as local minima.</p></div>
 <div class="contact-card"><div class="label">Reactivity analysis</div><strong>Electronic descriptors</strong><p>HOMO/LUMO energies, HOMO–LUMO gap, chemical potential, chemical hardness, electrophilicity, Fukui functions, and molecular electrostatic potential.</p></div>
-<div class="contact-card"><div class="label">Protein–ligand modeling</div><strong>Molecular docking</strong><p>Human serum albumin was used as the receptor. AutoDock4, AutoDock Vina, and DOCK6 were used to examine predicted poses and binding interactions.</p></div>
+<div class="contact-card"><div class="label">Protein–ligand modeling</div><strong>Molecular docking</strong><p>Human serum albumin was used as the receptor. AutoDock Vina was used to examine predicted poses and binding interactions.</p></div>
 </div></section>
 <section id="software"><h2>Software and versions</h2>
-<p class="lead">Only tools relevant to the DFT and docking workflow are listed. The version is identified as “confirmed” only where it is supported by the available project information; unverified versions are marked transparently rather than replaced with the latest release.</p>
+<p class="lead">Only tools relevant to the DFT and docking workflow are listed.</p>
 <div class="table-wrap"><table><thead><tr><th>Software</th><th>Use in this study</th><th>Version used</th><th>Official resource</th></tr></thead><tbody>
-<tr><td>DFT quantum-chemistry package</td><td>Geometry optimization, frequency calculations, and electronic descriptors at B3LYP-D3(BJ)/6-31+G(d,p)</td><td>Not specified in the poster information available</td><td>Confirm the package and version from the calculation input/output files before publication.</td></tr>
-<tr><td>AutoDock4</td><td>Molecular docking and pose scoring</td><td>4.2.6 (previously identified in project context; verify against the run files)</td><td><a href="https://autodock.scripps.edu/" target="_blank" rel="noopener noreferrer">Official site</a></td></tr>
-<tr><td>AutoDock Vina</td><td>Molecular docking and pose scoring</td><td>Not specified in the poster information available</td><td><a href="https://vina.scripps.edu/" target="_blank" rel="noopener noreferrer">Official site</a></td></tr>
-<tr><td>DOCK6</td><td>Molecular docking</td><td>Not specified in the poster information available</td><td><a href="https://dock.compbio.ucsf.edu/" target="_blank" rel="noopener noreferrer">Official site</a></td></tr>
+<tr><td>ORCA</td><td>Geometry optimization, frequency calculations, and electronic descriptors at B3LYP-D3(BJ)/6-31+G(d,p)</td><td>6.1.1</td><td><a href="https://www.faccts.de/orca/" target="_blank" rel="noopener noreferrer">Official site</a></td></tr>
+<tr><td>AutoDock Vina</td><td>Molecular docking and pose scoring</td><td>To be added (check the Vina output/log)</td><td><a href="https://vina.scripps.edu/" target="_blank" rel="noopener noreferrer">Official site</a></td></tr>
 </tbody></table></div>
-<div class="note"><strong>Before publishing:</strong> add the exact DFT package (for example, the name shown in the output file) and verify the installed versions of AutoDock Vina and DOCK6. Do not cite the latest available release as the version used unless you confirmed it.</div>
 </section>
 <section id="references"><h2>Selected references</h2><p class="lead">Selected sources supporting the haptenization background, BPDE–albumin adduct formation, DFT reactivity descriptors, and docking methods.</p>
 <ol class="refs">
@@ -51,13 +47,13 @@
 <li>Becke, A. D. (1993). Density-functional thermochemistry. III. The role of exact exchange. <em>The Journal of Chemical Physics, 98</em>(7), 5648–5652. <a href="https://doi.org/10.1063/1.464913" target="_blank" rel="noopener noreferrer">https://doi.org/10.1063/1.464913</a></li>
 <li>Grimme, S., Ehrlich, S., &amp; Goerigk, L. (2011). Effect of the damping function in dispersion corrected density functional theory. <em>Journal of Computational Chemistry, 32</em>(7), 1456–1465. <a href="https://doi.org/10.1002/jcc.21759" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/jcc.21759</a></li>
 <li>Yang, W., &amp; Parr, R. G. (1985). Hardness, softness, and the Fukui function in the electronic theory of metals and catalysis. <em>Proceedings of the National Academy of Sciences, 82</em>(20), 6723–6726. <a href="https://doi.org/10.1073/pnas.82.20.6723" target="_blank" rel="noopener noreferrer">https://doi.org/10.1073/pnas.82.20.6723</a></li>
-<li>Morris, G. M., Huey, R., Lindstrom, W., Sanner, M. F., Belew, R. K., Goodsell, D. S., &amp; Olson, A. J. (2009). AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility. <em>Journal of Computational Chemistry, 30</em>(16), 2785–2791. <a href="https://doi.org/10.1002/jcc.21256" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/jcc.21256</a></li>
 <li>Trott, O., &amp; Olson, A. J. (2010). AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. <em>Journal of Computational Chemistry, 31</em>(2), 455–461. <a href="https://doi.org/10.1002/jcc.21334" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/jcc.21334</a></li>
-<li>Allen, W. J., Balius, T. E., Mukherjee, S., Brozell, S. R., Moustakas, D. T., Lang, P. T., Case, D. A., Kuntz, I. D., &amp; Rizzo, R. C. (2015). DOCK 6: Impact of new features and current docking performance. <em>Journal of Computational Chemistry, 36</em>(15), 1132–1156. <a href="https://doi.org/10.1002/jcc.23905" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/jcc.23905</a></li>
 </ol>
 </section>
 </main>
 <footer><div class="footer-line">Supplementary webpage for a scientific poster. Software versions should be finalized from the actual calculation and docking files before public release.</div></footer>
 </body>
+</html>
+
 </html>
 
